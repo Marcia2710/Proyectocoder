@@ -1,0 +1,235 @@
+Body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.index-header{
+    flex-grow: 1;
+    background-image: url(../img/FONDO1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+ 
+}
+
+
+
+.Habitos-header{
+  background-image:url(../img/FONDO2.jpg);
+  background-size: cover;
+  background-position:center;
+  position: relative;
+  height: 380vh;
+
+  img{
+    height: 100vh; 
+    
+    
+  }
+  .habitos-saludables{
+background-position: center;
+    max-width:10rem; 
+    background-color: rgb(95, 219, 233);
+
+    img{
+        height:5rem;
+    }
+  }
+  h1{
+    color: #a7fb48;
+    font-size:25px;
+  }
+ 
+    
+}
+
+
+.Alimentacion-header{
+    background-image: url(../img/FONDO3.jpg);
+    background-size:center;
+    background-position:center;
+    height:370vh;
+    position:absolute;
+    
+    max-width:100rem; 
+    background-color: rgb(63, 219, 76);
+
+    img{
+        height:8rem;
+    }
+
+.Contenedor-1 {
+display:flex;
+flex-wrap:wrap;
+justify-content: space-between;
+background-position: center;
+
+.caja-1{
+    flex-basis: calc(50% - 10px);
+    margin-bottom:20px;
+}
+}
+
+.contenedor-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .caja-2 {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+.Alimentacion-header img {
+  height: 100vh;
+}
+
+}
+
+.Recetas-header {
+  background-image:url(../img/FONDO4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 280vh;
+  position: relative; 
+
+  img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    
+  }
+  .Contenedor-recetas{
+    display: flex;
+    
+  }
+  .caja-almuerzo{
+    width: 100%;
+    height: 95vh;
+    
+    
+  }
+ .caja-cena{
+     width: 100%;
+    height: 100%;
+     
+  }
+
+  .carrusel-indicador{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+
+    button{
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+
+      &.active{
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
+.contacto-header{
+    background-image:url(../img/FONDO5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    position: relative;
+
+    img{
+        height: 100vh;
+    }
+    h1{
+        color: rgb(167, 251, 72);
+        font-size:35px;
+    }
+    
+}
+
+.formulario-contacto{
+        label{
+            display: block;
+            margin-bottom: 2px;
+            text-align: left;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #927f12;
+            border-radius: 3px;
+        }
+    }
+
+.formulario-pais{
+    label{
+            display: block;
+            margin-bottom: 2px;
+            text-align: left;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #5e520b;
+            border-radius: 2px;
+        }
+}
+.formulario-genero{
+    label{
+            display: block;
+            margin-bottom: 1px;
+            text-align: top;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 2px;
+            margin-bottom: 5px;
+            border: 1px solid #5e520b;
+            border-radius: 2px;
+        }
+}
+.formulario-mensaje{
+    
+        input, select, textarea{
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 5px solid #5e520b;
+            border-radius: 5px;
+        }
+
+ }
+
+ .boton{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+
+   button{
+       padding: 10px 20px;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+
+       &:hover{
+           background-color: darken(#5e520b, 10%);
+       }
+   }
+ }

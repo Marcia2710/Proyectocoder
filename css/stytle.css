@@ -22,30 +22,37 @@ Body {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 380vh;
+  height: 260vh;
 }
 .Habitos-header img {
-  height: 100vh;
-}
-.Habitos-header .habitos-saludables {
-  background-position: center;
-  max-width: 10rem;
-  background-color: rgb(95, 219, 233);
-}
-.Habitos-header .habitos-saludables img {
-  height: 5rem;
+  height: 80vh;
+  background-size: cover;
+  object-fit: cover;
 }
 .Habitos-header h1 {
-  color: #a7fb48;
-  font-size: 25px;
+  color: rgb(167, 251, 72);
+  font-size: 35px;
 }
 
+.habitos-saludables {
+  opacity: 1;
+  animation: myAnimation 2s "2S";
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .Alimentacion-header {
   background-image: url(../img/FONDO3.jpg);
-  background-size: center;
+  background-size: cover;
   background-position: center;
-  height: 370vh;
-  position: absolute;
+  height: 295vh;
+  position: relative;
   max-width: 100rem;
   background-color: rgb(63, 219, 76);
 }
@@ -56,7 +63,6 @@ Body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-position: center;
 }
 .Alimentacion-header .Contenedor-1 .caja-1 {
   flex-basis: calc(50% - 10px);
@@ -72,7 +78,7 @@ Body {
   margin-bottom: 20px;
 }
 .Alimentacion-header .Alimentacion-header img {
-  height: 100vh;
+  height: 95vh;
 }
 
 .Recetas-header {
@@ -83,21 +89,32 @@ Body {
   position: relative;
 }
 .Recetas-header img {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 95vh;
+  height: 100%;
+  object-fit: cover;
 }
 .Recetas-header .Contenedor-recetas {
-  display: flex;
+  position: relative;
+  z-index: 1;
 }
 .Recetas-header .caja-almuerzo {
-  width: 100%;
-  height: 95vh;
-}
-.Recetas-header .caja-cena {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+.Recetas-header .caja-cena {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .Recetas-header .carrusel-indicador {
   position: absolute;
@@ -196,6 +213,44 @@ Body {
   background-color: rgb(48.3428571429, 42.1714285714, 5.6571428571);
 }
 
+h1 {
+  color: rgb(167, 251, 72);
+  font-size: 16px;
+}
+
+h2 {
+  color: rgb(42, 65, 42);
+  font-size: 14px;
+}
+
+h3 {
+  color: rgb(231, 154, 154);
+  font-size: 12px;
+}
+
+h4 {
+  color: salmon;
+  font-size: 10px;
+}
+
+h5 {
+  color: rgb(42, 65, 42);
+}
+
+h6 {
+  color: rgb(231, 154, 154);
+}
+
+p {
+  color: black;
+  font-size: 10px;
+}
+
+li {
+  color: rgb(182, 220, 57);
+  font-size: 10px;
+}
+
 .Index-footer {
   background-color: hsl(180, 36%, 39%);
   background-size: center;
@@ -222,11 +277,11 @@ Body {
 }
 
 .habitos-saludables {
-  max-width: 5rem;
+  max-width: 8rem;
   background-color: rgb(105, 177, 177);
 }
 .habitos-saludables img {
-  height: 10rem;
+  height: 6rem;
 }
 
 .carousel-recetas {
@@ -246,42 +301,4 @@ Body {
   font-family: "PT Sans", sans-serif;
 }
 
-h1 {
-  color: rgb(167, 251, 72);
-  font-size: 16px;
-}
-
-h2 {
-  color: rgb(42, 65, 42);
-  font-size: 14px;
-}
-
-h3 {
-  color: rgb(197, 244, 136);
-  font-size: 12px;
-}
-
-h4 {
-  color: rgb(105, 238, 185);
-  font-size: 10px;
-}
-
-h5 {
-  color: rgb(42, 65, 42);
-}
-
-h6 {
-  color: rgb(249, 246, 246);
-}
-
-p {
-  color: black;
-  font-size: 10px;
-}
-
-li {
-  color: rgb(182, 220, 57);
-  font-size: 10px;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stytle.css.map */

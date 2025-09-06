@@ -1,0 +1,47 @@
+@import "./layout/header";
+@import "./layout/footer";
+@import "./utilities/main";
+@import "./utilities/carousel";
+
+
+
+
+*{
+    font-family: "PT Sans", sans-serif;
+}
+
+
+h1{
+    color: rgb(167, 251, 72);
+    font-size: 16px;
+}
+h2{
+    color: rgb(42, 65, 42);
+    font-size: 14px;
+}
+
+h3 {
+    color: rgb(197, 244, 136);
+    font-size: 12px;
+}
+
+h4{
+    color: rgb(105, 238, 185);
+    font-size: 10px;
+}
+h5{
+    color: rgb(42, 65, 42);
+}
+h6{
+    color: rgb(249, 246, 246);
+}
+p{
+    color: black;
+    font-size: 10px;
+}
+
+li{
+    color: rgb(182, 220, 57);
+    font-size: 10px;
+
+}
